@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>CEFR Level Estimator</title>
+</head>
+
+<body>
+    {% include 'includes/navbar.html' %}
+    <main>
+        <section class="explanation">
+            <p>This tool estimates whether texts are appropriate for beginner, intermediate, or advanced language
+                learners. It works by analyzing vocabulary and grammatical constructions, and categorizing them by
+                proficiency level according to the <a
+                    href="https://en.wikipedia.org/wiki/Common_European_Framework_of_Reference_for_Languages">Common
+                    European Framework of Reference</a>. You can use this tool to curate personalized content for
+                learners. You can read more about how it works <a href="/">here</a>.</p>
+        </section>
+        <section class="interactives">
+            {% include 'includes/content-entry.html' %}
+            {% include 'includes/cefr-indicator.html' %}
+        </section>
+    </main>
+</body>
+
+</html>
